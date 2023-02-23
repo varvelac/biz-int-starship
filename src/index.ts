@@ -5,13 +5,14 @@ import { AppModule } from './app.module';
 import express from 'express';
 
 const server = express();
+const cors   = require('cors');
 
 const createNestServer = async (expressInstance) => {
   const app = await NestFactory.create(
     AppModule,
     new ExpressAdapter(expressInstance),
   );
-
+  app.use(cors())
   return app.init();
 };
 

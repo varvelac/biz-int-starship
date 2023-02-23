@@ -15,7 +15,7 @@ export declare class QuizController {
     readQuizzes(): Promise<void | (Quiz & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
     })[]>;
-    readQuizById(id: any): Promise<void | (Quiz & import("mongoose").Document<any, any, any> & {
+    readQuizById(id: string): Promise<void | (Quiz & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
     })>;
     createQuiz(userDto: Quiz): Promise<Quiz>;

@@ -14,6 +14,7 @@ import { QuizService } from "./quiz/quiz.service";
     MongooseModule.forFeature([
       { name: "shelters", schema: ShelterSchema },
       { name: "quizzes", schema: QuizSchema },
+      { name: "quiz", schema: QuizSchema },
     ]),
   ],
 })

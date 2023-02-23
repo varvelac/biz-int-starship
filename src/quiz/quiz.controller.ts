@@ -3,7 +3,7 @@ import { QuizService } from './quiz.service';
 import { Shelter, Quiz } from './quiz.models';
 import { ShelterUpdateDto } from './quizUpdate.dto';
 
-@Controller()
+@Controller('quizzes')
 export class QuizController {
   constructor(private readonly quiz_service: QuizService) {}
 
@@ -29,17 +29,18 @@ export class QuizController {
     return this.quiz_service.deleteShelter(id)
   }
 
-  @Get('/quizzes/')
+  @Get()
   readQuizzes(){
     return this.quiz_service.readQuizzes()
   }
 
-  @Get('/quiz:id')
-  readQuizById(id){
+  @Get(':id')
+  async readQuizById(@Param('id') id:string){
+    console.log('here')
     return this.quiz_service.readQuizById(id)
   }
 
-  @Post('/quizzes/create')
+  @Post('/create')
   async createQuiz(@Body() userDto: Quiz){
     return this.quiz_service.createQuiz(userDto)
   }
