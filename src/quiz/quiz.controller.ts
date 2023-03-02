@@ -36,8 +36,14 @@ export class QuizController {
 
   @Get(':id')
   async readQuizById(@Param('id') id:string){
-    console.log('here')
+    console.log('erftre')
     return this.quiz_service.readQuizById(id)
+  }
+
+  @Get('/random/:category')
+
+  async getRandomQuestions(@Param('category') category:string){
+    return this.quiz_service.getRandomQuestions(category)
   }
 
   @Post('/create')

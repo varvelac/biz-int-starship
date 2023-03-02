@@ -19,4 +19,5 @@ export declare class QuizService {
     readQuizById(id: any): Promise<void | (Quiz & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
     })>;
+    getRandomQuestions(category: string): Promise<void | Quiz>;
 }

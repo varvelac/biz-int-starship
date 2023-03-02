@@ -18,5 +18,6 @@ export declare class QuizController {
     readQuizById(id: string): Promise<void | (Quiz & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
     })>;
+    getRandomQuestions(category: string): Promise<void | Quiz>;
     createQuiz(userDto: Quiz): Promise<Quiz>;
 }

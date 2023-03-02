@@ -48,4 +48,32 @@ export class QuizService {
   .then((quiz)=>{return quiz})
   .catch((err)=>console.log(err))
 }
+
+//random 100 questions
+async getRandomQuestions(category: string) {
+  console.log(category);
+  const regex = new RegExp(category); // create case-insensitive regex
+  return this.quizModel.aggregate([
+    { $match: { category: regex } }, // match categories that include the string
+  ])
+  .then((quizzes) => {
+    console.log(quizzes, quizzes);
+    // get questions from the quizzes
+    let questions = quizzes.map((q) => q.questions);
+    // flatten the array
+    let flatQuestions = [].concat.apply([], questions);
+    // shuffle the array
+    let shuffledQuestions = flatQuestions.sort(() => 0.5 - Math.random());
+    // get sub-array of first n elements after shuffled
+    let selectedQuestions = shuffledQuestions.slice(0, 100);
+    //create a return object
+    let returnObject = new Quiz();
+    returnObject.questions = selectedQuestions;
+    returnObject.quiz_id = "random";
+    returnObject.category = category;
+    returnObject.name = `Random 100 ${category} questions`;
+    return returnObject;
+  })
+  .catch((err) => console.log(err));
+}
 }
