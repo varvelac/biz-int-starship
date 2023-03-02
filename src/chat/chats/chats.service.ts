@@ -1,11 +1,22 @@
 import { Injectable } from '@nestjs/common';
-import { CreateChatDto } from './dto/create-chat.dto';
+import { PromptChatDto } from './dto/create-chat.dto';
 import { UpdateChatDto } from './dto/update-chat.dto';
+import { OpenAIApi, Configuration } from 'openai';
+require('dotenv').config();
 
 @Injectable()
 export class ChatsService {
-  create(createChatDto: CreateChatDto) {
-    return 'This action adds a new chat';
+   configuration = new Configuration({
+      apiKey: process.env.OPENAI_API_KEY,
+  });
+   openai = new OpenAIApi(this.configuration);
+  
+  async prompt(promptChatDto: PromptChatDto) {
+    console.log('prompt', promptChatDto)
+  
+    const completion = await this.openai.createCompletion(promptChatDto);
+    console.log('completion', completion)
+    return completion.data;
   }
 
   findAll() {

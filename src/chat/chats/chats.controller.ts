@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { ChatsService } from './chats.service';
-import { CreateChatDto } from './dto/create-chat.dto';
+import { PromptChatDto } from './dto/create-chat.dto';
 import { UpdateChatDto } from './dto/update-chat.dto';
 
 @Controller('chats')
@@ -8,8 +8,8 @@ export class ChatsController {
   constructor(private readonly chatsService: ChatsService) {}
 
   @Post()
-  create(@Body() createChatDto: CreateChatDto) {
-    return this.chatsService.create(createChatDto);
+  prompt(@Body() promptChatDto: PromptChatDto) {
+    return this.chatsService.prompt(promptChatDto);
   }
 
   @Get()
