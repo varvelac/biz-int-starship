@@ -1,5 +1,5 @@
-import { Shelter, Quiz, ShelterDocument, QuizDocument } from './quiz.models';
-import { Model } from 'mongoose';
+import { Shelter, Quiz, ShelterDocument, QuizDocument } from "./quiz.models";
+import { Model } from "mongoose";
 export declare class QuizService {
     private readonly shelterModel;
     private readonly quizModel;
