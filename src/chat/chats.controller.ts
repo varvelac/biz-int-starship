@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { ChatsService } from './chats.service';
-import { PromptChatDto } from './dto/create-chat.dto';
+import { PromptChatDto, PromptPrefixDto } from './dto/create-chat.dto';
 import { UpdateChatDto } from './dto/update-chat.dto';
 
 @Controller('chats')
@@ -12,9 +12,14 @@ export class ChatsController {
     return this.chatsService.prompt(promptChatDto);
   }
 
-  @Get()
-  findAll() {
-    return this.chatsService.findAll();
+  @Post('/prefixes')
+  addPrefix(@Body() promptPrefixDto: PromptPrefixDto) {
+    return this.chatsService.addPrefix(promptPrefixDto);
+  }
+
+  @Get('/prefixes')
+  readPrefixes() {
+    return this.chatsService.readPrefixes();
   }
 
   @Get(':id')

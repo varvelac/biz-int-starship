@@ -5,6 +5,7 @@ export class PromptChatDto {
   prompt: string;
   max_tokens: number;
   temperature: number;
+  prefixes: string[];
   // top_p: number;
   // presence_penalty: number;
   // frequency_penalty: number;
@@ -14,4 +15,10 @@ export class PromptChatDto {
   // logprobs: number;
   // echo: boolean;
   // stop: string[];
+}
+
+export class PromptPrefixDto {
+  name: string;
+  value: string;
+
 }
