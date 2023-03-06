@@ -7,10 +7,13 @@ import { QuizService } from "./quiz/quiz.service";
 import { ChatsController } from "./chat/chats.controller";
 import { ChatsService } from "./chat/chats.service";
 import { PromptPrefixesSchema } from "./chat/entities/chat.entity";
+import { FinSentimentsService } from "./fin_sentiments/fin_sentiments.service";
+import { FinSentimentsController } from "./fin_sentiments/fin_sentiments.controller";
+
 require('dotenv').config();
 @Module({
-  controllers: [EggController, QuizController, ChatsController],
-  providers: [QuizService, ChatsService ],
+  controllers: [EggController, QuizController, ChatsController, FinSentimentsController],
+  providers: [QuizService, ChatsService, FinSentimentsService ],
   imports: [
     MongooseModule.forRoot(
       process.env.MONGO_URI,

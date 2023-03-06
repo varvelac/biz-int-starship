@@ -1,0 +1,235 @@
+[debug] [2023-03-04T18:27:01.916Z] ----------------------------------------------------------------------
+[debug] [2023-03-04T18:27:01.918Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alexv\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-03-04T18:27:01.919Z] CLI Version:   11.23.1
+[debug] [2023-03-04T18:27:01.919Z] Platform:      win32
+[debug] [2023-03-04T18:27:01.919Z] Node Version:  v16.13.0
+[debug] [2023-03-04T18:27:01.920Z] Time:          Sat Mar 04 2023 10:27:01 GMT-0800 (Pacific Standard Time)
+[debug] [2023-03-04T18:27:01.920Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-04T18:27:02.011Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-04T18:27:02.012Z] > authorizing via signed-in user (varvelac@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-03-04T18:27:02.024Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-04T18:27:02.024Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-03-04T18:27:02.028Z] [hub] writing locator at C:\Users\alexv\AppData\Local\Temp\hub-biz-int-starship.json
+[debug] [2023-03-04T18:27:02.052Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-04T18:27:02.053Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-04T18:27:02.053Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-03-04T18:27:02.057Z] defaultcredentials: writing to file C:\Users\alexv\AppData\Roaming\firebase\varvelac_gmail_com_application_default_credentials.json
+[debug] [2023-03-04T18:27:02.061Z] Setting GAC to C:\Users\alexv\AppData\Roaming\firebase\varvelac_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\alexv\\AppData\\Roaming\\firebase\\varvelac_gmail_com_application_default_credentials.json"}}
+[debug] [2023-03-04T18:27:02.065Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/biz-int-starship/adminSdkConfig [none]
+[debug] [2023-03-04T18:27:02.275Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/biz-int-starship/adminSdkConfig 200
+[debug] [2023-03-04T18:27:02.276Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/biz-int-starship/adminSdkConfig {"projectId":"biz-int-starship","storageBucket":"biz-int-starship.appspot.com"}
+[debug] [2023-03-04T18:27:02.288Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-03-04T18:27:02.288Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-03-04T18:27:02.289Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\alexv\\.cache\\firebase\\emulators\\ui-v1.11.4\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\alexv\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.4\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-03-04T18:27:02.426Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-03-04T18:27:02.426Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\sandbox\biz-int-starship\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\sandbox\\biz-int-starship\\functions\" for Cloud Functions..."}}
+[debug] [2023-03-04T18:27:02.571Z] Validating nodejs source
+[debug] [2023-03-04T18:27:03.774Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@nestjs/common": "^9.3.9",
+    "@nestjs/core": "^9.3.9",
+    "@nestjs/mapped-types": "^1.2.2",
+    "@nestjs/mongoose": "^9.2.1",
+    "@nestjs/platform-express": "^9.3.9",
+    "@nestjs/testing": "^9.3.9",
+    "axios": "^1.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "jest": "^29.4.3",
+    "mongoose": "^6.9.2",
+    "openai": "^3.2.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "firebase-functions-test": "^3.0.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2023-03-04T18:27:03.774Z] Building nodejs source
+[debug] [2023-03-04T18:27:03.775Z] Failed to find version of module node: reached end of search path C:\sandbox\biz-int-starship\functions\node_modules
+[info] +  functions: Using node@16 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-03-04T18:27:03.779Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-03-04T18:27:03.786Z] Found firebase-functions binary at 'C:\sandbox\biz-int-starship\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-03-04T18:27:03.961Z] Serving at port 8603
+
+[debug] [2023-03-04T18:27:04.938Z] [Nest] 2808  - 03/04/2023, 6:27:04 PM     LOG [NestFactory] Starting Nest application...
+
+[debug] [2023-03-04T18:27:04.942Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-03-04T18:27:04.959Z] [Nest] 2808  - 03/04/2023, 6:27:04 PM     LOG [InstanceLoader] MongooseModule dependencies initialized +21ms
+
+[debug] [2023-03-04T18:27:04.965Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-03-04T18:27:05.659Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [InstanceLoader] MongooseCoreModule dependencies initialized +700ms
+
+[debug] [2023-03-04T18:27:05.667Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [InstanceLoader] MongooseModule dependencies initialized +9ms
+
+[debug] [2023-03-04T18:27:05.668Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [InstanceLoader] AppModule dependencies initialized +1ms
+
+[debug] [2023-03-04T18:27:05.671Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RoutesResolver] EggController {/egg}: +3ms
+
+[debug] [2023-03-04T18:27:05.673Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/egg, GET} route +2ms
+
+[debug] [2023-03-04T18:27:05.673Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RoutesResolver] QuizController {/quizzes}: +0ms
+
+[debug] [2023-03-04T18:27:05.674Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes/shelters/create, POST} route +0ms
+
+[debug] [2023-03-04T18:27:05.674Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes/shelters, GET} route +1ms
+
+[debug] [2023-03-04T18:27:05.674Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes/shelters:id, PUT} route +0ms
+
+[debug] [2023-03-04T18:27:05.675Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes/:id, DELETE} route +0ms
+
+[debug] [2023-03-04T18:27:05.675Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes, GET} route +0ms
+
+[debug] [2023-03-04T18:27:05.675Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes/:id, GET} route +1ms
+
+[debug] [2023-03-04T18:27:05.675Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes/random/:category, GET} route +0ms
+
+[debug] [2023-03-04T18:27:05.676Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/quizzes/create, POST} route +0ms
+
+[debug] [2023-03-04T18:27:05.676Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RoutesResolver] ChatsController {/chats}: +0ms
+
+[debug] [2023-03-04T18:27:05.676Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/chats, POST} route +1ms
+
+[debug] [2023-03-04T18:27:05.676Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/chats/prefixes, POST} route +0ms
+
+[debug] [2023-03-04T18:27:05.676Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/chats/prefixes, GET} route +0ms
+
+[debug] [2023-03-04T18:27:05.677Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/chats/:id, GET} route +0ms
+
+[debug] [2023-03-04T18:27:05.677Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/chats/:id, PATCH} route +0ms
+
+[debug] [2023-03-04T18:27:05.677Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/chats/:id, DELETE} route +1ms
+[Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RoutesResolver] FinSentimentsController {/fin}: +0ms
+
+[debug] [2023-03-04T18:27:05.677Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/fin, POST} route +0ms
+
+[debug] [2023-03-04T18:27:05.677Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/fin/news, POST} route +0ms
+
+[debug] [2023-03-04T18:27:05.677Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/fin, GET} route +0ms
+
+[debug] [2023-03-04T18:27:05.677Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/fin/:id, GET} route +0ms
+
+[debug] [2023-03-04T18:27:05.678Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/fin/:id, PATCH} route +0ms
+
+[debug] [2023-03-04T18:27:05.678Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [RouterExplorer] Mapped {/fin/:id, DELETE} route +0ms
+
+[debug] [2023-03-04T18:27:05.679Z] [Nest] 2808  - 03/04/2023, 6:27:05 PM     LOG [NestApplication] Nest application successfully started +2ms
+
+[debug] [2023-03-04T18:27:05.680Z] Nest Ready
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/biz-int-starship/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/biz-int-starship/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-03-04T18:27:15.857Z] [work-queue] {"queuedWork":["/biz-int-starship/us-central1/api/fin/news-2023-03-04T18:27:15.856Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-03-04T18:27:15.857Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/biz-int-starship/us-central1/api/fin/news-2023-03-04T18:27:15.856Z"],"workRunningCount":1}
+[debug] [2023-03-04T18:27:15.857Z] Accepted request POST /biz-int-starship/us-central1/api/fin/news --> us-central1-api
+[debug] [2023-03-04T18:27:15.858Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-03-04T18:27:15.858Z] [functions] Got req.url=/biz-int-starship/us-central1/api/fin/news, mapping to path=/fin/news {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/biz-int-starship/us-central1/api/fin/news, mapping to path=/fin/news"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-03-04T18:27:15.866Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-03-04T18:27:15.867Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-03-04T18:27:16.962Z] [runtime-status] [36000] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-03-04T18:27:16.964Z] [runtime-status] [36000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-04T18:27:16.964Z] [runtime-status] [36000] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-03-04T18:27:16.965Z] [runtime-status] [36000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-04T18:27:17.165Z] [runtime-status] [36000] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-03-04T18:27:17.165Z] [runtime-status] [36000] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-03-04T18:27:17.165Z] [runtime-status] [36000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-04T18:27:17.167Z] [runtime-status] [36000] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-03-04T18:27:17.169Z] [runtime-status] [36000] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.2.1","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.2.1\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-03-04T18:27:17.170Z] [runtime-status] [36000] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.5.0","resolution":"C:\\sandbox\\biz-int-starship\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.5.0\",\"resolution\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [NestFactory] Starting Nest application... {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[NestFactory] \u001b[39m\u001b[32mStarting Nest application...\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[NestFactory] \u001b[39m\u001b[32mStarting Nest application...\u001b[39m"}}
+[debug] [2023-03-04T18:27:18.074Z] [runtime-status] [36000] Functions runtime initialized. {"cwd":"C:\\sandbox\\biz-int-starship\\functions","node_version":"16.13.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Functions runtime initialized. {\"cwd\":\"C:\\\\sandbox\\\\biz-int-starship\\\\functions\",\"node_version\":\"16.13.0\"}"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [InstanceLoader] MongooseModule dependencies initialized +26ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mMongooseModule dependencies initialized\u001b[39m\u001b[38;5;3m +26ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mMongooseModule dependencies initialized\u001b[39m\u001b[38;5;3m +26ms\u001b[39m"}}
+[debug] [2023-03-04T18:27:18.093Z] [runtime-status] [36000] Listening to port: \\?\pipe\fire_emu_027100ed80ac77ab {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [36000] Listening to port: \\\\?\\pipe\\fire_emu_027100ed80ac77ab"}}
+[debug] [2023-03-04T18:27:18.146Z] [worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: IDLE"}}
+[debug] [2023-03-04T18:27:18.146Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-03-04T18:27:18.147Z] [worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: BUSY"}}
+[info] i  functions: Finished "us-central1-api" in 12.2055ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 12.2055ms"}}
+[debug] [2023-03-04T18:27:18.160Z] [worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: IDLE"}}
+[debug] [2023-03-04T18:27:18.160Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [InstanceLoader] MongooseCoreModule dependencies initialized +658ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mMongooseCoreModule dependencies initialized\u001b[39m\u001b[38;5;3m +658ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mMongooseCoreModule dependencies initialized\u001b[39m\u001b[38;5;3m +658ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [InstanceLoader] MongooseModule dependencies initialized +8ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mMongooseModule dependencies initialized\u001b[39m\u001b[38;5;3m +8ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mMongooseModule dependencies initialized\u001b[39m\u001b[38;5;3m +8ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [InstanceLoader] AppModule dependencies initialized +2ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mAppModule dependencies initialized\u001b[39m\u001b[38;5;3m +2ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[InstanceLoader] \u001b[39m\u001b[32mAppModule dependencies initialized\u001b[39m\u001b[38;5;3m +2ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RoutesResolver] EggController {/egg}: +4ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mEggController {/egg}:\u001b[39m\u001b[38;5;3m +4ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mEggController {/egg}:\u001b[39m\u001b[38;5;3m +4ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/egg, GET} route +3ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/egg, GET} route\u001b[39m\u001b[38;5;3m +3ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/egg, GET} route\u001b[39m\u001b[38;5;3m +3ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RoutesResolver] QuizController {/quizzes}: +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mQuizController {/quizzes}:\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mQuizController {/quizzes}:\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes/shelters/create, POST} route +1ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/shelters/create, POST} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/shelters/create, POST} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes/shelters, GET} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/shelters, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/shelters, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes/shelters:id, PUT} route +1ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/shelters:id, PUT} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/shelters:id, PUT} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes/:id, DELETE} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/:id, DELETE} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/:id, DELETE} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes, GET} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes/:id, GET} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/:id, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/:id, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes/random/:category, GET} route +1ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/random/:category, GET} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/random/:category, GET} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/quizzes/create, POST} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/create, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/quizzes/create, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RoutesResolver] ChatsController {/chats}: +1ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mChatsController {/chats}:\u001b[39m\u001b[38;5;3m +1ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mChatsController {/chats}:\u001b[39m\u001b[38;5;3m +1ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/chats, POST} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/chats/prefixes, POST} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/prefixes, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/prefixes, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/chats/prefixes, GET} route +1ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/prefixes, GET} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/prefixes, GET} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/chats/:id, GET} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/:id, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/:id, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/chats/:id, PATCH} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/:id, PATCH} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/:id, PATCH} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/chats/:id, DELETE} route +1ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/:id, DELETE} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/chats/:id, DELETE} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RoutesResolver] FinSentimentsController {/fin}: +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mFinSentimentsController {/fin}:\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RoutesResolver] \u001b[39m\u001b[32mFinSentimentsController {/fin}:\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/fin, POST} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/fin/news, POST} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/news, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/news, POST} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/fin, GET} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/fin/:id, GET} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/:id, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/:id, GET} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/fin/:id, PATCH} route +0ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/:id, PATCH} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/:id, PATCH} route\u001b[39m\u001b[38;5;3m +0ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [RouterExplorer] Mapped {/fin/:id, DELETE} route +1ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/:id, DELETE} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[RouterExplorer] \u001b[39m\u001b[32mMapped {/fin/:id, DELETE} route\u001b[39m\u001b[38;5;3m +1ms\u001b[39m"}}
+[info] >  [Nest] 36000  - 03/04/2023, 6:27:18 PM     LOG [NestApplication] Nest application successfully started +3ms {"user":"\u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[NestApplication] \u001b[39m\u001b[32mNest application successfully started\u001b[39m\u001b[38;5;3m +3ms\u001b[39m","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m \u001b[32m[Nest] 36000  - \u001b[39m03/04/2023, 6:27:18 PM \u001b[32m    LOG\u001b[39m \u001b[38;5;3m[NestApplication] \u001b[39m\u001b[32mNest application successfully started\u001b[39m\u001b[38;5;3m +3ms\u001b[39m"}}
+[info] >  Nest Ready {"user":"Nest Ready","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Nest Ready"}}
+[debug] [2023-03-04T18:27:45.192Z] [work-queue] {"queuedWork":["/biz-int-starship/us-central1/api/fin/news-2023-03-04T18:27:45.192Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-03-04T18:27:45.193Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/biz-int-starship/us-central1/api/fin/news-2023-03-04T18:27:45.192Z"],"workRunningCount":1}
+[debug] [2023-03-04T18:27:45.193Z] Accepted request POST /biz-int-starship/us-central1/api/fin/news --> us-central1-api
+[debug] [2023-03-04T18:27:45.193Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-03-04T18:27:45.193Z] [functions] Got req.url=/biz-int-starship/us-central1/api/fin/news, mapping to path=/fin/news {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/biz-int-starship/us-central1/api/fin/news, mapping to path=/fin/news"}}
+[debug] [2023-03-04T18:27:45.193Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-03-04T18:27:45.194Z] [worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: BUSY"}}
+[info] i  functions: Finished "us-central1-api" in 859.4332ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 859.4332ms"}}
+[debug] [2023-03-04T18:27:46.054Z] [worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-3ffde7ea-2841-462e-8dd0-bf365bc7d557]: IDLE"}}
+[debug] [2023-03-04T18:27:46.054Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}

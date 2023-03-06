@@ -26,6 +26,7 @@ import { Document } from 'mongoose';
 export type PromptPrefixesDocument = PromptPrefixes & Document;
 export declare class PromptPrefixes {
     name: string;
-    value: string;
+    prompt: string;
+    description: string;
 }
 export declare const PromptPrefixesSchema: import("mongoose").Schema<PromptPrefixes, import("mongoose").Model<PromptPrefixes, any, any, any, any>, {}, {}, {}, {}, import("mongoose").DefaultSchemaOptions, PromptPrefixes>;

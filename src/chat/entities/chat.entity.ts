@@ -11,7 +11,10 @@ export class PromptPrefixes{
   name: string;
 
   @Prop()
-  value:string;
+  prompt:string;
+
+  @Prop()
+  description: string;
 
 }
 

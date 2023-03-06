@@ -21,7 +21,7 @@ export class ChatsService {
   async prompt(promptData: PromptChatDto) {
     console.log('prompt', promptData)
     const payload = {
-      prompt: promptData.prefixes.join('. ') + promptData.prompt,
+      prompt: `${promptData.prefixes}. ${promptData.prompt}`,
       max_tokens: promptData.max_tokens,
       temperature: promptData.temperature,
       model: promptData.model,
