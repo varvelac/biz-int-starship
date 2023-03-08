@@ -36,6 +36,8 @@ export declare class ChatsController {
     readPrefixes(): Promise<void | (import("./entities/chat.entity").PromptPrefixes & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
     })[]>;
+    sendText(payload: any): Promise<void>;
+    receiveText(payload: any): Promise<any>;
     findOne(id: string): string;
     update(id: string, updateChatDto: UpdateChatDto): string;
     remove(id: string): string;

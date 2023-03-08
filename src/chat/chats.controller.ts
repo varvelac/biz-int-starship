@@ -22,6 +22,15 @@ export class ChatsController {
     return this.chatsService.readPrefixes();
   }
 
+  @Post('/sms/send')
+  sendText(@Body() payload: any) {
+    return this.chatsService.sendText(payload);
+  }
+  @Post('/sms/receive')
+  receiveText(@Body() payload: any) {
+    return this.chatsService.receiveText(payload);
+  }
+
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.chatsService.findOne(+id);

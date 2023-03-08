@@ -6,7 +6,7 @@ import { QuizController } from "./quiz/quiz.controller";
 import { QuizService } from "./quiz/quiz.service";
 import { ChatsController } from "./chat/chats.controller";
 import { ChatsService } from "./chat/chats.service";
-import { PromptPrefixesSchema } from "./chat/entities/chat.entity";
+import { PromptPrefixesSchema, TwilioSchema } from "./chat/entities/chat.entity";
 import { FinSentimentsService } from "./fin_sentiments/fin_sentiments.service";
 import { FinSentimentsController } from "./fin_sentiments/fin_sentiments.controller";
 
@@ -23,6 +23,7 @@ require('dotenv').config();
       { name: "quizzes", schema: QuizSchema },
       { name: "quiz", schema: QuizSchema },
       { name: "prefixes", schema: PromptPrefixesSchema },
+      { name: "twilio", schema: TwilioSchema },
     ]),
   ],
 })
