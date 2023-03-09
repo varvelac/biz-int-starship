@@ -1,7 +1,6 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Delete } from '@nestjs/common';
 import { ChatsService } from './chats.service';
 import { PromptChatDto, PromptPrefixDto } from './dto/create-chat.dto';
-import { UpdateChatDto } from './dto/update-chat.dto';
 
 @Controller('chats')
 export class ChatsController {
@@ -31,15 +30,15 @@ export class ChatsController {
     return this.chatsService.receiveText(payload);
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.chatsService.findOne(+id);
-  }
+  // @Get(':id')
+  // findOne(@Param('id') id: string) {
+  //   return this.chatsService.findOne(+id);
+  // }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateChatDto: UpdateChatDto) {
-    return this.chatsService.update(+id, updateChatDto);
-  }
+  // @Patch(':id')
+  // update(@Param('id') id: string, @Body() updateChatDto: UpdateChatDto) {
+  //   return this.chatsService.update(+id, updateChatDto);
+  // }
 
   @Delete(':id')
   remove(@Param('id') id: string) {

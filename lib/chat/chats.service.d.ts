@@ -1,13 +1,13 @@
 import { PromptChatDto, PromptPrefixDto } from "./dto/create-chat.dto";
-import { UpdateChatDto } from "./dto/update-chat.dto";
-import { PromptPrefixesDocument, TwilioDocument } from "./entities/chat.entity";
+import { ChatHistory, ChatHistoryDocument, PromptPrefixesDocument, TwilioDocument } from "./entities/chat.entity";
 import { Model } from "mongoose";
 export declare class ChatsService {
     private readonly prefixModel;
     private readonly twilioModel;
+    private readonly chatHistoryModel;
     private configuration;
     private openai;
-    constructor(prefixModel: Model<PromptPrefixesDocument>, twilioModel: Model<TwilioDocument>);
+    constructor(prefixModel: Model<PromptPrefixesDocument>, twilioModel: Model<TwilioDocument>, chatHistoryModel: Model<ChatHistoryDocument>);
     prompt(promptData: PromptChatDto): Promise<import("openai").CreateCompletionResponse>;
     addPrefix(prefix: PromptPrefixDto): Promise<import("./entities/chat.entity").PromptPrefixes & import("mongoose").Document<any, any, any> & {
         _id: import("mongoose").Types.ObjectId;
@@ -17,8 +17,17 @@ export declare class ChatsService {
     })[]>;
     sendText(payload: any): Promise<void>;
     receiveText(payload: any): Promise<any>;
-    findAll(): string;
-    findOne(id: number): string;
-    update(id: number, updateChatDto: UpdateChatDto): string;
+    saveChatHistory(payload: any): Promise<ChatHistory & import("mongoose").Document<any, any, any> & {
+        _id: import("mongoose").Types.ObjectId;
+    }>;
+    findOneChatHistory(from_number: string): Promise<void | ChatHistory>;
+    updateChatHistory(payload: any): Promise<void | (ChatHistory & import("mongoose").Document<any, any, any> & {
+        _id: import("mongoose").Types.ObjectId;
+    })>;
+    formatHistory(history: any): any;
+    deactivateChatHistory(payload: any): Promise<void | (ChatHistory & import("mongoose").Document<any, any, any> & {
+        _id: import("mongoose").Types.ObjectId;
+    })>;
     remove(id: number): string;
+    findAll(): string;
 }

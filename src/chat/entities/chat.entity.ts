@@ -1,35 +1,82 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
+import { Document } from "mongoose";
 
-
-export type PromptPrefixesDocument = PromptPrefixes & Document
-export type TwilioDocument = Twilio & Document
+export type PromptPrefixesDocument = PromptPrefixes & Document;
+export type TwilioDocument = Twilio & Document;
+export type ChatHistoryDocument = ChatHistory & Document;
 
 @Schema()
-export class PromptPrefixes{
-
+export class PromptPrefixes {
   @Prop()
   name: string;
 
   @Prop()
-  prompt:string;
+  prompt: string;
 
   @Prop()
   description: string;
-
 }
 
 @Schema()
-export class Twilio{
-
+export class Twilio {
   @Prop()
-  Body: string
+  Body: string;
   @Prop()
-  From: string
+  From: string;
   @Prop()
-  SmsMessageSid: string
-
+  SmsMessageSid: string;
+  @Prop()
+  ToCountry: string;
+  @Prop()
+  ToState: string;
+  @Prop()
+  NumMedia: string;
+  @Prop()
+  ToCity: string;
+  @Prop()
+  FromZip: string;
+  @Prop()
+  SmsSid: string;
+  @Prop()
+  FromState: string;
+  @Prop()
+  SmsStatus: string;
+  @Prop()
+  FromCity: string;
+  @Prop()
+  FromCountry: string;
+  @Prop()
+  To: string;
+  @Prop()
+  ToZip: string;
+  @Prop()
+  NumSegments: string;
+  @Prop()
+  MessageSid: string;
+  @Prop()
+  AccountSid: string;
+  @Prop()
+  ApiVersion: string;
 }
 
-export const PromptPrefixesSchema = SchemaFactory.createForClass(PromptPrefixes)
-export const TwilioSchema = SchemaFactory.createForClass(Twilio)
+@Schema()
+export class ChatHistory {
+  @Prop()
+  SmsMessageSid: string;
+
+  @Prop()
+  history: any[];
+
+  @Prop()
+  From: string;
+
+  @Prop()
+  To: string;
+
+  @Prop()
+  active: boolean;
+}
+
+export const PromptPrefixesSchema = SchemaFactory.createForClass(PromptPrefixes);
+export const TwilioSchema = SchemaFactory.createForClass(Twilio);
+export const ChatHistorySchema = SchemaFactory.createForClass(ChatHistory);
